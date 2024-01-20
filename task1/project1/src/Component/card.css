@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.card_parent{
+    display: flex;
+    gap: 20px;
+}
+.card {
+    height: 100hv;
+    width: 400px;
+    border-radius: 8px;
+    background-color: #F5F7FEFF;
+
+  
+
+}
+
+img {
+    border-radius: 8px;
+    
+}
+
+.card_title {
+    margin-top: 10px;
+    text-align: left;
+    color: rgb(71, 69, 69);
+}
+
+.name {
+    text-align: left;
+    color: #A6B3BEFF;
+}
+
+.add_cart {
+    border-radius: 8px;
+  background-color: blue;
+    color: white;
+    margin-top: 20px;
+}
+
+.red {
+    background-color: red;
+
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+
+}

@@ -1,34 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Card from './Component/card'
 
 function App() {
-  const [count, setCount] = useState(0)
+  let data = [{
+    cardtitle: "React vite",
+    button: "Download",
+    color:"red",
+    id:0
+  },
+{
+  cardtitle:"Hello JavaScript",
+  button: 'Add to cart',
+  color: "green",
+  id:1
+},
+{
+  cardtitle: "Phyton for Data Science and Machine Learing Bootcamp",
+  button: 'Add to cart',
+  color: "yellow",
+  id:2
+}]
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className='card_parent'>
+      <>
+    {
+      data.map((item) => {
+       return <Card cardtitle={item.cardtitle} button={item.button} color={item.color} key={item.id} />
+        
+      })
+       
+    }
+    
     </>
+    </div>
+    
   )
 }
 
