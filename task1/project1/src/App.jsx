@@ -1,6 +1,8 @@
 
 import './App.css'
+import Banner from './Component/banner'
 import Card from './Component/card'
+
 
 function App() {
   let data = [{
@@ -22,9 +24,13 @@ function App() {
   id:2
 }]
 
+
+
   return (
+    <>
+    <Banner img='img1.png'/>
     <div className='card_parent'>
-      <>
+      
     {
       data.map((item) => {
        return <Card cardtitle={item.cardtitle} button={item.button} color={item.color} key={item.id} />
@@ -32,11 +38,13 @@ function App() {
       })
        
     }
+     
     
-    </>
     </div>
+    </>
     
   )
+  
 }
 
 export default App

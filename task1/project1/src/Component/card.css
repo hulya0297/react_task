@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
+
+
 .card_parent{
     display: flex;
     gap: 20px;
+    margin-left: 20px;
 }
 .card {
     height: 100hv;
@@ -20,6 +23,7 @@
 
 img {
     border-radius: 8px;
+   
     
 }
 
